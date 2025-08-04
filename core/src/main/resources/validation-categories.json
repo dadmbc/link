@@ -980,7 +980,7 @@
     "id": "observation_interpretation",
     "title": "Observation Interpretation",
     "severity": "WARNING",
-    "acceptable": true,
+    "acceptable": false,
     "guidance": "Observation interpretations must come from the provided ValueSet when the coded concept exists",
     "ruleSets": [
       {
