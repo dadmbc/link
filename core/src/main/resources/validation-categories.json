@@ -303,7 +303,7 @@
     "title": "Unable to match profile",
     "severity": "ERROR",
     "acceptable": false,
-    "guidance": "This could indicate an underlying issue in the resource (the resource is not validating). FHIR SME may need to review.",
+    "guidance": "Unable to validate the resoruce likely due to technical issues  when the validator failed to validate a resource instance against the asserted profile (as specified in .meta.profile). [TODO- Need to determine specific guidance for hospital user/reader]",
     "ruleSets": [
       {
         "rules": [
@@ -345,7 +345,7 @@
     "id": "Possible_matching_profile",
     "title": "Possible matching profile",
     "severity": "INFORMATION",
-    "acceptable": true,
+    "acceptable": false,
     "guidance": "This could indicate an underlying issue in the resource (the resource is not validating).",
     "ruleSets": [
       {
