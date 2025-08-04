@@ -381,11 +381,6 @@
           },
           {
             "field": "DETAILS_TEXT",
-            "regex": "^No code provided, and a code should be provided from the value set '.*' \\(http:\\/\\/hl7\\.org\\/fhir\\/ValueSet\\/observation-interpretation\\|4\\.0\\.1\\)",
-            "inverse": false
-          },
-          {
-            "field": "DETAILS_TEXT",
             "regex": "^No code provided, and a code should be provided from the value set '.*' \\(http:\\/\\/hl7\\.org\\/fhir\\/ValueSet\\/subscriber-relationship\\|4\\.0\\.1\\)",
             "inverse": false
           }
@@ -974,6 +969,25 @@
           {
             "field": "DETAILS_TEXT",
             "regex": "Rule us-core-8: '.*' Failed",
+            "inverse": false
+          }
+        ],
+        "andOperator": false
+      }
+    ]
+  },
+  {
+    "id": "observation_interpretation",
+    "title": "Observation Interpretation",
+    "severity": "WARNING",
+    "acceptable": true,
+    "guidance": "Observation interpretations must come from the provided ValueSet when the coded concept exists",
+    "ruleSets": [
+      {
+        "rules": [
+          {
+            "field": "DETAILS_TEXT",
+            "regex": "^No code provided, and a code should be provided from the value set '.*' \\(http:\\/\\/hl7\\.org\\/fhir\\/ValueSet\\/observation-interpretation\\|4\\.0\\.1\\)",
             "inverse": false
           }
         ],
